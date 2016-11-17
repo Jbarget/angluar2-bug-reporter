@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+      System.config({
+        defaultJSExtensions: true,
+        map: {
+          'angular2': 'node_modules/angular2',
+          'rxjs': 'node_modules/rxjs'
+        }
+      });
+      System.import('built/app/boot');
+    </script>
+  </head>
+
+  <body>
+    <main-app>Loading…</main-app>
+  </body>
+</html>
