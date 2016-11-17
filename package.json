@@ -1,0 +1,38 @@
+{
+  "name": "angluar2-bug-reporter",
+  "version": "1.0.0",
+  "description": "Angular 2 web app to analyse bugs via Trello API",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "app": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
+    "typings": "typings"
+   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jbarget/angluar2-bug-reporter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jbarget/angluar2-bug-reporter/issues"
+  },
+  "homepage": "https://github.com/Jbarget/angluar2-bug-reporter#readme",
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.2.0",
+    "typescript": "^1.8.10",
+    "typings": "^0.7.12"
+  },
+  "dependencies": {
+    "angular2": "^2.0.0-beta.15",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.2",
+    "zone.js": "^0.6.10",
+    "systemjs": "0.19.26"
+  }
+}
